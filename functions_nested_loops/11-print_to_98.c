@@ -19,10 +19,13 @@ void print_to_98(int n)
 				printf("%d", i);
 				_putchar(',');
 				_putchar(' ');
+				_putchar(' ');
 			}
 			else if (i == 98)
 			{
 				printf("%d\n", i);
+				_putchar(',');
+				_putchar(' ');
 			}
 		}
 	}
