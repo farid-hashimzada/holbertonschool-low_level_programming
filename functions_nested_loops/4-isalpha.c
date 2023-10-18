@@ -1,12 +1,12 @@
 #include "main.h"
 
 /**
- * main - check the code.
+ * _isalpha - Write a function that checks for alphabetic character. check the code.
  *@c: Write a function that checks for alphabetic character.
  * Return: Always 0.
  */
 
-int _isalpha(int c) 
+int _isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z'))
 	{
