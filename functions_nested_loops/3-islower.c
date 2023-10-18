@@ -2,7 +2,7 @@
 
 /**
  * _islower - checks for lowercase character..
- *
+ *@c:qchecks for lowercase character. *
  * Return: Always 0.
  */
 
