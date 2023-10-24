@@ -13,18 +13,18 @@
 
 void rev_string(char *s)
 {
+	int len = strlen(s) - 1;
 	int i;
-	int cod = strlen(s) - 1;
 	char copy[1000];
 
-	for (i = 0; i <= 0; i++)
+	for (i = 0; i <= len; i++)
 	{
 		copy[i] = s[i];
 	}
 
-	for (i = 0; i <= cod; i++)
+	for (i = 0; i <= len; i++)
 	{
-		int index = abs(cod - i);
+		int index = abs(len - i);
 
 		s[i] = copy[index];
 	}
