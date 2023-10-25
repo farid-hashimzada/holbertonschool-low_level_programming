@@ -5,7 +5,7 @@
  * _strcpy - write src string with parametr
  * @dest: string
  * @src: string
- * 
+ *
  *
  * Return: Always 0.
  */
