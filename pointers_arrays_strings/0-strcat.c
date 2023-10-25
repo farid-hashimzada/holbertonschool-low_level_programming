@@ -2,7 +2,10 @@
 #include <stdio.h>
 
 /**
- * main - check the code
+ * _strcat - Write a function that concatenates two strings.
+ *
+ * @dest:Write a function that concatenates two strings.
+ * @src:Write a function that concatenates two strings.
  *
  * Return: Always 0.
  */
