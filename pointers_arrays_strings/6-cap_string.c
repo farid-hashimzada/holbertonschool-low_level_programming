@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * capitalizeString - capitalizeString the string
+ * cap_string - capitalizeString the string
  *@bush: parametr
  *
  * Return: Always 0.
