@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * string_toupper - that changes all lowercase letters of a string to uppercase.
+ * string_toupper - changes all lowercase letters of a string to uppercase.
  * @str: that changes all lowercase letters of a string to uppercase.
  *
  * Return: str.
@@ -19,5 +19,5 @@ char *string_toupper(char *str)
 			str[i] = str[i] - 'a' + 'A';
 		}
 	}
-	return str;
+	return (str);
 }
