@@ -13,7 +13,7 @@ unsigned int _strspn(char *s, char *accept)
 {
 	int count = 0;
 	int i, j;
-	int size = strlen(accept)
+	int size = strlen(accept);
 
 	while (s[i])
 	{
