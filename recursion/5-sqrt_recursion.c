@@ -2,12 +2,9 @@
 #include <stdio.h>
 
 /**
- * _sqrt_recursion - sqrt recursion
  * _sqrt - function
+ * @n: parametr
  * @guess: parametr
- * @n: parametr
- * @n: parametr
- *
  * Return: Always 0.
  */
 
@@ -23,7 +20,11 @@ int _sqrt(int n, int guess)
 	}
 	return (_sqrt(n, guess + 1));
 }
-
+/**
+ * _sqrt_recursion - sqrt recursion
+ * @n: parametr
+ * Return: int
+ */
 int _sqrt_recursion(int n)
 {
 	if (n < 0)
