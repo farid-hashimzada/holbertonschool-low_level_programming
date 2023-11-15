@@ -4,7 +4,7 @@
 #include <string.h>
 
 /**
- * strdup - memmory
+ * _strdup - memmory
  * @str: parametr
  *
  * Return: co.
