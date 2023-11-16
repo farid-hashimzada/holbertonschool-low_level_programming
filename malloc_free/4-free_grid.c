@@ -4,7 +4,7 @@
 
 /**
  * free_grid - free grid
- * @**grid: pointer to pointer
+ * @grid: pointer to pointer
  * @height: parametr
  *
  * Return: no return
