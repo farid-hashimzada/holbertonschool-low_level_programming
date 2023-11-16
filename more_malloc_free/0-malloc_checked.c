@@ -13,11 +13,11 @@
 void *malloc_checked(unsigned int b)
 {
 	char *co;
-	
+
 	co = malloc(b);
 	if (co == NULL)
 	{
-		return (NULL);
+		exit(98);
 	}
 	return (co);
 
