@@ -2,8 +2,8 @@
 #define F_H
 
 /**
- * struct co - check the code
- * @co: operator
+ * struct op - check the code
+ * @op: operator
  * @f: assosicated
  *
  * Return: Always 0.
