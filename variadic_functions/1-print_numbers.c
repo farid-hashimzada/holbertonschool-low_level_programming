@@ -5,7 +5,7 @@
 /**
  * print_numbers - sum the argument with separator
  * @separator: arg
- * @b: parametr
+ * @n: parametr
  *
  * Return: co
  */
