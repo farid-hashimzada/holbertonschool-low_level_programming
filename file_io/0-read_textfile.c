@@ -7,7 +7,7 @@
 #include "main.h"
 
 /**
- * read_textflie - red text file
+ * read_textfile - red text file
  * @filename: name list
  * @letters: content
  *
