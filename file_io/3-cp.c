@@ -12,7 +12,7 @@
   */
 int _cp(const char *file_from, const char *file_to)
 {
-	int fdf, fdt, len = BUFF;
+	int fdf, fdt, r = 1, w;
 	char *content = malloc(BUFF);
 
 	fdt = open(file_to, O_RDWR | O_TRUNC | O_CREAT, 0664);
@@ -25,14 +25,15 @@ int _cp(const char *file_from, const char *file_to)
 		dprintf(STDERR_FILENO, 
 				"Error: Can't write to %s\n", 
 				file_to), exit(99);
-	while (len == BUFF)
+	while (r > 0)
 	{
-		if (read(fdf, content, BUFF) == -1)
+	    r = read(fdf, content, BUFF);
+		if (r == -1)
 			dprintf(STDERR_FILENO, 
 					"Error: Can't read from file %s\n", 
 					file_from), exit(98);
-		len = strlen(content);
-		if (write(fdt, content, len) == -1)
+		w = write(fdt, content, r);
+		if (w == -1)
 			dprintf(STDERR_FILENO, 
 					"Error: Can't write to %s\n", 
 					file_to), exit(99);
@@ -53,10 +54,10 @@ int _cp(const char *file_from, const char *file_to)
   */
 int main(int argc, char **argv)
 {
-	if (argc != 3)
-	{
-		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
-		exit(97);
-	}
+ 	if (argc != 3)
+ 	{
+ 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+ 		exit(97);
+ 	}
 	return (_cp(argv[1], argv[2]));
 }
