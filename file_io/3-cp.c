@@ -3,6 +3,7 @@
 #include <fcntl.h>
 #include <stdio.h>
 #include <string.h>
+#include <sys/stat.h>
 #define BUFF 1024
 /**
   * _cp -  copy file
@@ -15,7 +16,8 @@ int _cp(const char *file_from, const char *file_to)
 	int fdf, fdt, r = 1, w;
 	char *content = malloc(BUFF);
 
-	fdt = open(file_to, O_RDWR | O_TRUNC | O_CREAT, 0664);
+	umask(0);
+	fdt = open(file_to, O_TRUNC | O_CREAT | O_RDWR, 0664);
 	fdf = open(file_from, O_RDONLY);
 	if (fdf == -1)
 		dprintf(STDERR_FILENO, 
