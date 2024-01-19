@@ -5,7 +5,7 @@
  * linear_search - linear search algorithm
  * @array: firt element of the array
  * @size: array size
- * @value: value 
+ * @value: value
  *
  */
 
@@ -21,7 +21,6 @@ int linear_search(int *array, size_t size, int value)
 		printf("Value checked array[%lu] = [%d]\n", i, array[i]);
 		if (array[i] == value)
 			return (i);
-		
 	}
 	return (-1);
 }
