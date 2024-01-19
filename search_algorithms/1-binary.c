@@ -6,6 +6,7 @@
  * @array: list of the array
  * @size: size of the array
  * @value: value of array
+ * Return: -1
  */
 
 int binary_search(int *array, size_t size, int value)
