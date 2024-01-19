@@ -6,7 +6,7 @@
  * @array: firt element of the array
  * @size: size of array
  * @value: value of array
- *
+ * Return: -1
  */
 
 int linear_search(int *array, size_t size, int value)
