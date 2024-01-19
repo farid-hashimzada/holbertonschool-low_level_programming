@@ -4,8 +4,8 @@
 /**
  * linear_search - linear search algorithm
  * @array: firt element of the array
- * @size: array size
- * @value: value
+ * @size: size of array
+ * @value: value of array
  *
  */
 
